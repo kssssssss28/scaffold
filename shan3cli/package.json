@@ -1,0 +1,32 @@
+{
+  "name": "shan3cli",
+  "version": "1.0.0",
+  "description": "tools for init project",
+  "main": "index.js",
+  "scripts": {
+    "compile": "babel src -d dist",
+    "watch": "npm run compile -- --watch"
+  },
+  "bin": {
+    "shan3cli": "./bin/cmd.js",
+    "shan3-cli": "./bin/cmd.js",
+    "shan3": "./bin/cmd.js"
+  },
+  "author": "kuangshan",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "download-git-repo": "^3.0.2",
+    "figlet": "^1.6.0",
+    "fs-extra": "^11.1.1",
+    "inquirer": "^8.0.0",
+    "log-symbols": "^5.1.0",
+    "ora": "^6.3.1"
+  }
+}
